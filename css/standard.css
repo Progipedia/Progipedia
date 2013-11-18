@@ -1,0 +1,339 @@
+/* Gesamte Seite */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: #F5F5F5;
+	font-family: Verdana,"Courier New",sans-serif;
+	color: #1E1E52;
+}
+
+	/** Links **/
+
+a[href] {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+a[href]:hover, a[href]:focus, a[href]:active, a[href]:visited:hover, a[href]:visited:focus, a[href]:visited:active {
+	text-decoration: underline;
+}
+
+a[href]:visited {
+	color: #CC0055;
+}
+
+	/** Bilder **/
+	
+img {
+	border: none;
+}
+
+	/** Formular-Felder **/
+
+input {
+	border: solid 1px #DCDCDC;
+	background-color: #FFF;
+}
+
+input[type="submit"] {
+	color: #1E1E52;
+	padding: 3px;
+	background-color: #D3DAF5;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius:  10px;
+	-moz-border-radius:    10px;
+	border-radius:         10px;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+	cursor:pointer;
+	color: #1E1E52;
+	background-color: #F5F5EF;
+}
+
+input[type="text"], input[type="password"] {
+	width: 150px;
+}
+
+
+
+
+/* Bereiche */
+
+	/** Kopfzeile **/
+	
+header {
+	border-bottom: solid 2px #DCDCDC;
+	padding: 10px 10px 40px 10px;
+	margin: 0 20px 20px 20px;
+	min-width: 670px;
+}
+
+		/*** Bilder ***/
+		
+#bild_progipedia {
+	margin: 15px 0px 0px 33%;
+}
+
+#bild_banner {
+	position: absolute;
+	margin: 0 0 0 -20px;
+}
+
+		/*** Login-Feld / Logout-Feld ***/
+
+#login_feld {
+	margin: 28px 4px 0 18px;
+	float: right;
+}
+
+#logout_feld {
+	margin: 28px 265px 0 18px;
+	float: right;
+}
+
+		/*** Benutzerkonto anlegen ***/
+		
+#benutzerkonto_anlegen {
+	border: solid 2px #DCDCDC;
+	-webkit-border-radius: 13px;
+	-khtml-border-radius:  13px;
+	-moz-border-radius:    13px;
+	border-radius:         13px;
+	background-color: #D3DAF5;
+	margin: 22px 32px 12px 12px;
+	padding: 5px;
+	float: right;
+	color: #1E1E52;
+}
+
+#benutzerkonto_anlegen:hover, #benutzerkonto_anlegen:focus, #benutzerkonto_anlegen:active {
+	background-color: #F5F5EF;
+	color: #1E1E52;
+	text-decoration: none;
+}
+
+	/** Hauptzeile **/
+
+section {
+	padding: 15px;
+	min-height: 550px;
+}
+
+		/*** Navigationszelle ***/
+
+nav {												/*Nicht sehr elegante Variante für ein "Holy-Grail-Layout" (aber es funktioniert):*/
+	width: 240px;									/*Folgender Inhalt mit dem Selektor "nav" ersetzen: nav {	width:240px;   border-right: 2px solid #DCDCDC;   position: absolute;   top: 286px; }*/
+	float: left;									/*Darüber hinaus muss dieie HTML-Struktur ebenfalls angepasst werden. D.h. der gesamte Artikelbereich (<article>) muss mit dem gesamten Navigationsbereich (<nav>) getauscht werden*/
+	border-right: 2px solid #DCDCDC;				/*Für optimale behindertengerechte Funktionalität sollte ebenfalls bei Aufrugen über die Tabulatortaste des Banners dieser auf irgeneinerweise hervorstechen!*/
+}
+
+nav a[href], nav a[href]:visited {
+	color: #585858;
+}
+
+nav ul{
+	font-size: 17px;
+	list-style-type: none;
+}
+
+nav ul li {
+	font-family: "Courier New";
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+
+nav ul li:last-child {
+	padding-bottom: 0px;
+}
+
+nav ul li ul {
+	padding-left: 22px;
+}
+
+nav ul li ul li {
+	font-weight: normal;
+	font-size: 15px;
+	padding-bottom: 0;
+}
+
+nav a, nav span {
+	text-decoration: none;
+	padding: 3px 0 3px 5px;
+	display: block;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+	border-right:  2px solid #ADB8E4;
+	margin-right: -2px;
+	font-weight: bold;
+	text-decoration: none !important;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:focus, nav > ul > li > a:active  {
+	border-left: 7px solid #ADB8E4;
+	border-right:  2px solid #ADB8E4;
+	margin-right: -2px;
+}
+
+#nav_aktiv {
+	background-image:url(../Bilder/nav_pfeil.png);
+	background-repeat: no-repeat;
+	background-position:center right;
+	border-right:  2px solid #ADB8E4;
+	margin-right: -2px;
+}
+
+		/*** Artikelzelle ***/
+
+article {
+	margin: 20px 0 0 240px;
+	padding: 0 2px 0 60px;
+	border-left: 2px solid #DCDCDC;
+	min-width: 300px;
+}
+
+			/**** Artikelseite ****/
+
+				/***** Überschriften *****/
+			
+h1 {
+	font-size: 40px;
+	font-family: "OCR A Extended","Courier New",sans-serif;
+	margin-bottom: 13px;
+	text-indent: 15px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: "OCR A Extended","Courier New",sans-serif;
+	margin: 25px 0 8px 0;
+	text-indent: 15px;
+}
+
+h3 {
+	font-size: 23px;
+	font-family: "OCR A Extended","Courier New",sans-serif;
+	margin: 15px 0 8px 0;
+	text-indent: 30px;
+}
+
+h4 {
+	font-size: 19px;
+	font-family: "OCR A Extended","Courier New",sans-serif;
+	margin: 0px 0 8px 0;
+}
+
+				/***** Inhaltsverzeichnis *****/
+
+#inhaltsverzeichnis {
+	background-color: #E7EBFC;
+	border: 1px solid #ADB8E4;
+	margin: 20px 0 20px 0;
+	padding: 15px;
+}
+
+#inhaltsverzeichnis tr td ul {
+	color: #1E1E52;
+	margin: 0 0 3px 23px;
+	list-style-type: none;
+}
+
+				/***** Kategoriefeld *****/
+
+#kategoriefeld {
+	margin-top: 20px;
+	border: 1px solid #ADB8E4;
+	padding: 10px;
+	background-color: #E7EBFC;
+	display: inline-block;
+}
+
+			/**** Hauptseite ****/
+
+.box {
+	width: 50%;
+	vertical-align: top;
+	border: 2px solid #DCDCDC;
+	padding: 15px;
+	background-color: #d8def8;
+}
+
+.index_listenpunkte {
+	margin: 10px 0 10px 23px;
+}
+
+#index_h1 {
+	margin: 0 150px 10px 150px;
+}
+
+			/**** Artikel anlegen ****/
+
+textarea {
+	resize: none;
+}
+
+	/** Fußzeile **/
+
+footer {
+	border-top: solid 2px #DCDCDC;
+	padding: 10px 10px 10px 10px;
+	margin: 20px 20px 0 20px;
+	min-width: 670px;
+}
+
+footer a[href] {
+	color: #585858;
+}
+
+
+
+
+/* Sonstiges */
+
+	/**ID´s**/
+
+input#suchen_feld {
+	text-align: center;
+}
+
+#suchen_feld {
+	width:198px;
+	border: solid 1px #000;
+	-webkit-border-top-left-radius:  15px;
+	-webkit-border-top-right-radius: 15px;
+	-khtml-border-top-left-radius:   15px;
+	-khtml-border-top-right-radius:  15px;
+	border-top-right-radius:         15px;
+	border-top-left-radius:          15px;
+}
+
+	/** Klassen **/
+
+.zentrieren {
+	text-align: center;
+}
+
+.fett {
+	font-weight: bold;
+}
+
+.innenabstand_links10px_oben5px {
+	padding: 5px 0 0 10px;
+}
+
+.rahmen_oben_entfernen {
+	border-top: none;
+}
+
+.rahmen_unten_entfernen {
+	border-bottom: none;
+}
+
+.inline {
+	display: inline;
+}
